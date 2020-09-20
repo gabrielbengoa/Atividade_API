@@ -13,14 +13,14 @@ $db-$database->getConnection();
 $paciente = new Paciente($db);
 
 $data = json_decode(file_get_contents("php://input"));
-$paciente->idpaciente-$data->idpaciente;
-$paciente->nome-$data->nome;
-$paciente->email-$data->email;
-$paciente->sexo-$data->sexo;
-$paciente->telefone-$data->telefone;
-$paciente->datanascimento-$data->datanascimento;
-$paciente->usuario-$data->usuario;
-$paciente->nome-$senha->senha;
+$paciente->idpaciente=$data->idpaciente;
+$paciente->nome=$data->nome;
+$paciente->email=$data->email;
+$paciente->sexo=$data->sexo;
+$paciente->telefone=$data->telefone;
+$paciente->datanascimento=$data->datanascimento;
+$paciente->usuario=$data->usuario;
+$paciente->nome=$senha->senha;
 
 if($paciente->atualizar()){
     header("HTTP/1.0 201");

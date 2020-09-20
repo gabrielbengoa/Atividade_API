@@ -13,7 +13,7 @@ $db-$database->getConnection();
 $paciente = new Paciente($db);
 
 $data = json_decode(file_get_contents("php://input"));
-$paciente->idpaciente-$data->idpaciente;
+$paciente->idpaciente=$data->idpaciente;
 
 
 if($paciente->delete()){
